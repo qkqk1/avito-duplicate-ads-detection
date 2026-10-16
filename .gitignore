@@ -11,3 +11,4 @@ data/
 mlruns/
 .env
 .DS_Store
+.idea/
