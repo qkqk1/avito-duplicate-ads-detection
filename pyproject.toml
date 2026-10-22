@@ -25,6 +25,8 @@ packages = [{ include = "avito_dups", from = "src" }]
 [tool.poetry.group.dev.dependencies]
 pytest = ">=8.2"
 ruff = ">=0.5"
+jupyterlab = "^4.6.4"
+ipykernel = "^7.4.0"
 
 [build-system]
 requires = ["poetry-core>=2.0"]
