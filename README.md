@@ -25,6 +25,8 @@ poetry run avito-dups md5 data/raw/kaggle/ItemPairs_train.csv
 
 Даты публикации в таблицах нет, так что проверки по времени не будет.
 
+Для работы CSV переводятся в Parquet командой `poetry run avito-dups build-dataset`. Результат попадает в `data/processed/`: `items.parquet` с объявлениями и `pairs.parquet` с парами.
+
 ## Колонка generationMethod
 
 В `ItemPairs_train.csv` у каждой пары есть поле `generationMethod`, которое показывает происхождение метки:
@@ -49,6 +51,7 @@ poetry run avito-dups md5 data/raw/kaggle/ItemPairs_train.csv
 
 ```
 poetry install
+poetry run avito-dups build-dataset
 poetry run pytest
 ```
 
