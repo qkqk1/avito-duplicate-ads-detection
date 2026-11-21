@@ -61,6 +61,7 @@ poetry run pytest
 ```
 src/avito_dups/      код проекта
 tests/               тесты
+notebooks/           разведочный анализ данных
 .github/workflows/   проверки в CI
 pyproject.toml       зависимости и настройки
 ```
